@@ -109,8 +109,8 @@ void bsg_recordException(NSException *exception) {
         bsg_lastHandledException = exception;
         BSG_KSLOG_DEBUG(@"Writing exception info into a new report");
 
-        BSG_KSLOG_DEBUG(@"Suspending all threads.");
-        bsg_kscrashsentry_suspendThreads();
+        //BSG_KSLOG_DEBUG(@"Suspending all threads.");
+        //bsg_kscrashsentry_suspendThreads();
 
         BSG_KSLOG_DEBUG(@"Filling out context.");
         NSArray *addresses = [exception callStackReturnAddresses];
